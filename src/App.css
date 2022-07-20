@@ -1,38 +1,39 @@
-.App {
-  text-align: center;
+:root {
+  --rose: #da2354;
+  --aquagreen: #01e09a;
+  --shadow: #1f1d1d;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background: #e9e5e5;
+  display: grid;
+  place-items: center;
+  height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Watermelon {
+  position: relative;
+  height: 3rem;
+  width: 6rem;
+  background: var(--aquagreen);
+  border-radius: 0 0 9.375rem 9.375rem;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 0.125rem 1.25rem rgba(0, 0, 0, 0.4);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.style {
+  position: absolute;
+  left: 0.2rem;
+  height: 2.8rem;
+  width: 5.6rem;
+  background: var(--rose);
+  border-radius: 0 0 9.375rem 9.375rem;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 0.125rem 1.25rem rgba(0, 0, 0, 0.4);
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.style div:nth-child(n) {
+  position: relative;
 }
