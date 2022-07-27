@@ -3,25 +3,28 @@
   --aquagreen: #01e09a;
   --darkgreen: #037d56;
   --shadow: #1f1d1d;
-  --greensky: #85ffda;
+  --pinkred: #ff85c8;
 }
 
 body {
-  background: #e9e5e5;
+  background: var(--pinkred);
   display: grid;
   place-items: center;
   height: 100vh;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 .Watermelon {
   position: relative;
   height: 13rem;
   width: 13rem;
-  background: var(--rose);
+  background: var(--pinkred);
   border-radius: 50%;
   overflow: hidden;
   cursor: pointer;
-  box-shadow: 0 0.125rem 1.25rem rgba(0, 0, 0, 0.4);
+
+  user-select: none;
 }
 .whole {
   position: relative;
@@ -308,7 +311,7 @@ body {
   background: var(--darkgreen);
   width: 1.1rem;
   height: 0.5rem;
-  top: 2.9rem;
+  top: 2.8rem;
   left: -0.4rem;
   border-radius: 0 0 20rem 20rem;
 }
@@ -326,7 +329,7 @@ body {
   background: var(--darkgreen);
   width: 1.1rem;
   height: 0.5rem;
-  top: 2.9rem;
+  top: 2.8rem;
   left: 0.6rem;
   border-radius: 0 0 20rem 20rem;
 }
@@ -344,7 +347,7 @@ body {
   background: var(--darkgreen);
   width: 1.1rem;
   height: 0.5rem;
-  top: 2.9rem;
+  top: 2.8rem;
   left: 1.6rem;
   border-radius: 0 0 20rem 20rem;
 }
@@ -362,7 +365,7 @@ body {
   background: var(--darkgreen);
   width: 1.1rem;
   height: 0.5rem;
-  top: 2.9rem;
+  top: 2.8rem;
   left: 2.6rem;
   border-radius: 0 0 20rem 20rem;
 }
@@ -380,7 +383,7 @@ body {
   background: var(--darkgreen);
   width: 1.1rem;
   height: 0.5rem;
-  top: 2.9rem;
+  top: 2.8rem;
   left: 3.6rem;
   border-radius: 0 0 20rem 20rem;
 }
@@ -398,7 +401,7 @@ body {
   background: var(--darkgreen);
   width: 1.1rem;
   height: 0.5rem;
-  top: 2.9rem;
+  top: 2.8rem;
   left: 4.6rem;
   border-radius: 0 0 20rem 20rem;
 }
@@ -416,7 +419,7 @@ body {
   background: var(--darkgreen);
   width: 1.1rem;
   height: 0.5rem;
-  top: 2.9rem;
+  top: 2.8rem;
   left: 5.6rem;
   border-radius: 0 0 20rem 20rem;
 }
@@ -509,10 +512,13 @@ body {
   width: 0.5rem;
 }
 .Watermelon:hover {
-  background: var(--greensky);
-  transition: 0.7s ease-in-out;
+  transition: 0.7s ease;
 }
 .Watermelon:hover .slice {
   top: 73%;
-  transition: 0.7s ease-in-out;
+  transition: 0.7s ease;
+}
+::selection pseudo-element {
+  color: none;
+  background: none;
 }
