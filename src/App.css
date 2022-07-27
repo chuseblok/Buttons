@@ -510,9 +510,9 @@ body {
 }
 .Watermelon:hover {
   background: var(--greensky);
-  transition: 0.7s ease;
+  transition: 0.7s ease-in-out;
 }
 .Watermelon:hover .slice {
   top: 73%;
-  transition: 0.7s ease;
+  transition: 0.7s ease-in-out;
 }
